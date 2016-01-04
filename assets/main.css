@@ -1,0 +1,44 @@
+/*reset*/
+html, body {
+    height: 100%;
+    margin: 0px;
+    background-color: white;
+}
+
+/* header */
+.header{
+    
+}
+
+/* header */
+.nav{
+    background-color: black;
+    bottom: 10px;
+    left: 10%;
+    right: 10%;
+    height: 5%;
+}
+
+.intro{
+    background-color: white;
+}
+
+.class{
+    background-color: black;
+}
+
+.sign{
+    background-color: white;
+}
+
+.staff{
+    background-color: black;
+}
+
+.sponsor{
+    background-color: white;
+}
+
+.footer{
+    background-color: black;
+}
