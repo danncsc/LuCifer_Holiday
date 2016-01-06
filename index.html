@@ -7,8 +7,6 @@
     <title>LuCifer Holiday</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="assets/jquery.cycle.lite.js"></script>
-    <script src="assets/narrative.js"></script>
-    <script src="assets/skrollr.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(".toggle").click(function() {
@@ -16,6 +14,18 @@
                 $(".nav").slideToggle();
             });
             $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('.nav').addClass("menufixed");
+                } else {
+                    $('.nav').removeClass("menufixed");
+                }
+            });
+
         });
     </script>
 </head>
@@ -34,7 +44,7 @@
 
     </div>
 
-    <a href="#header"></a>
+    <a name="header"></a>
     <div class="header">
         <img src="assets/images/header1.png" height="100%" width="100%">
     </div>
@@ -58,7 +68,9 @@
                 <th>Day5</th>
             </tr>
             <tr>
-                <td>9:00<br>~<br>9:30</td>
+                <td>9:00
+                    <br>~
+                    <br>9:30</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -66,7 +78,9 @@
                 <td></td>
             </tr>
             <tr>
-                <td>9:30<br>~<br>10:00</td>
+                <td>9:30
+                    <br>~
+                    <br>10:00</td>
                 <td>遊戲登入</td>
                 <td>補充元氣</td>
                 <td>自我升級</td>
@@ -74,32 +88,48 @@
                 <td>戰友談心</td>
             </tr>
             <tr>
-                <td>10:00<br>~<br>12:00</td>
-                <td>「墮落前的天使」<br>git教學<br>‧Rice</td>
-                <td>「訓練時間」<br>Web教學<br>‧白羊</td>
-                <td>「升級後的苦果」<br>Web教學<br>‧Rice</td>
+                <td>10:00
+                    <br>~
+                    <br>12:00</td>
+                <td>「墮落前的天使」
+                    <br>git教學
+                    <br>‧Rice</td>
+                <td>「訓練時間」
+                    <br>Web教學
+                    <br>‧白羊</td>
+                <td>「升級後的苦果」
+                    <br>Web教學
+                    <br>‧Rice</td>
                 <td>出征！</td>
                 <td>御前爭功</td>
             </tr>
             <tr>
-                <td>12:00<br>~<br>13:30</td>
-                
+                <td>12:00
+                    <br>~
+                    <br>13:30</td>
+
             </tr>
             <tr>
-                <td>13:30<br>~<br>14:30</td>
-                <td>「新手教學」<br>Web教學<br>‧白羊</td>
+                <td>13:30
+                    <br>~
+                    <br>14:30</td>
+                <td>「新手教學」
+                    <br>Web教學
+                    <br>‧白羊</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>追封大典</td>
             </tr>
             <tr>
-                <td>14:30<br>~<br>16:30</td>
+                <td>14:30
+                    <br>~
+                    <br>16:30</td>
                 <td>好友登陸</td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>終焉之時</td>     
+                <td>終焉之時</td>
             </tr>
         </table>
     </div>
