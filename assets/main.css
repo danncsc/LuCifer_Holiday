@@ -1,44 +1,241 @@
 /*reset*/
-html, body {
+
+html,
+body {
+    width: 100%;
     height: 100%;
     margin: 0px;
-    background-color: white;
-}
-
-/* header */
-.header{
-    
-}
-
-/* header */
-.nav{
-    background-color: black;
-    bottom: 10px;
-    left: 10%;
-    right: 10%;
-    height: 5%;
-}
-
-.intro{
-    background-color: white;
-}
-
-.class{
     background-color: black;
 }
 
-.sign{
-    background-color: white;
+/*nav*/
+
+.menufixed {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.nav li {
+    position: relative;
+    float: left;
+    color: #FFF;
+    list-style: none;
+    background: #E77C40;
+}
+.nav li a {
+    display: block;
+    padding: 15px 30px;
+    color: #FFF;
+    text-decoration: none;
+}
+.nav li:hover {
+    background: #E9905E;
+}
+.nav li ul {
+    background-color: rgba(231, 124, 64, 1);
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+.nav li:hover ul {
+    display: block;
+    right: 0;
+    left: 0;
+    top: 100%;
+}
+.toggle {
+    display: none;
+}
+.arrow-bottom {
+    position: absolute;
+    top: 25px;
+    right: 13px;
+    margin-left: 5px;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    width: 1px;
+    height: 1px;
+}
+@media (max-width: 640px) {
+    .nav {
+        display: none;
+    }
+    .toggle {
+        display: inline-block;
+        background: #D8540A;
+        padding: 10px 15px;
+        color: #FFF;
+    }
+    .nav li {
+        float: none;
+    }
+    .nav li a {
+        padding: 10px 15px;
+    }
+    .nav li:hover ul {
+        position: relative;
+        display: block;
+        background: transparent;
+    }
+    .nav li:hover ul li {
+        background: transparent;
+    }
+    .nav li:hover ul li a {
+        padding-left: 30px;
+    }
+    .arrow-bottom {
+        top: 20px;
+    }
 }
 
-.staff{
+/*nav end*/
+
+.intro {
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.class {
+    background-color: black;
+    padding-top: 150px;
+}
+.sign {
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.Lft {
+    margin-left: 40%;
+}
+.staff {
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+#staff {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1%;
+}
+.sponsor {
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.footer {
+    padding-top: 1px;
     background-color: black;
 }
-
-.sponsor{
-    background-color: white;
+.Red-sponsor {
+    margin: 5%;
+    width: 10em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color: #c93f3f;
+}
+.sign button {
+    width: 20%;
+    background-color: #3167c9;
+    font-size: 18px;
+    color: white;
+}
+.sign button:hover {
+    background-color: #1446a0;
 }
 
-.footer{
-    background-color: black;
+/*text*/
+
+.intro,
+.sign,
+.sponsor,
+.class,
+.footer {
+    text-align: center;
+}
+.staff,
+.Lft {
+    text-align: left;
+}
+.Red-sponsor h1 {
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.class,
+.staff h1,
+p {
+    color: white;
+}
+.footer p {
+    color: gray;
+}
+#staff p {
+    color: #009dff;
+}
+
+/*Table*/
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #aabcfe;
+}
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aabcfe;
+    color: #669;
+    background-color: #e8edff;
+}
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aabcfe;
+    color: #039;
+    background-color: #b9c9fe;
+}
+.tg .tg-mb3i {
+    background-color: #D2E4FC;
+    text-align: right;
+    vertical-align: top
+}
+.tg .tg-lqy6 {
+    text-align: right;
+    vertical-align: top
+}
+.tg .tg-yw4l {
+    vertical-align: top
+}
+.tg .tg-6k2t {
+    background-color: #D2E4FC;
+    vertical-align: top
 }
