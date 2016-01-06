@@ -122,7 +122,7 @@ nav {
     padding-top: 1px;
     padding-bottom: 1px;
 }
-.Lft {
+.Lft{
     margin-left: 40%;
 }
 .staff {
@@ -151,13 +151,13 @@ nav {
     margin-bottom: 1px;
     background-color: #c93f3f;
 }
-.sign button {
+.sign button{
     width: 20%;
     background-color: #3167c9;
     font-size: 18px;
     color: white;
 }
-.sign button:hover {
+.sign button:hover{
     background-color: #1446a0;
 }
 
@@ -184,6 +184,8 @@ nav {
 p {
     color: white;
 }
+
+
 .footer p {
     color: gray;
 }
@@ -192,50 +194,10 @@ p {
 }
 
 /*Table*/
-
-.tg {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border-color: #aabcfe;
-}
-.tg td {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    padding: 10px 5px;
-    border-style: solid;
-    border-width: 1px;
-    overflow: hidden;
-    word-break: normal;
-    border-color: #aabcfe;
-    color: #669;
-    background-color: #e8edff;
-}
-.tg th {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 10px 5px;
-    border-style: solid;
-    border-width: 1px;
-    overflow: hidden;
-    word-break: normal;
-    border-color: #aabcfe;
-    color: #039;
-    background-color: #b9c9fe;
-}
-.tg .tg-mb3i {
-    background-color: #D2E4FC;
-    text-align: right;
-    vertical-align: top
-}
-.tg .tg-lqy6 {
-    text-align: right;
-    vertical-align: top
-}
-.tg .tg-yw4l {
-    vertical-align: top
-}
-.tg .tg-6k2t {
-    background-color: #D2E4FC;
-    vertical-align: top
-}
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-mb3i{background-color:#D2E4FC;text-align:right;vertical-align:top}
+.tg .tg-lqy6{text-align:right;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-6k2t{background-color:#D2E4FC;vertical-align:top}
