@@ -5,44 +5,152 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/main.css" />
     <title>LuCifer Holiday</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/jquery.cycle.lite.js"></script>
+    <script src="assets/narrative.js"></script>
+    <script src="assets/skrollr.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".toggle").click(function() {
+                $(this).toggleClass("active");
+                $(".nav").slideToggle();
+            });
+            $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+        });
+    </script>
 </head>
 
-<body>
-    <div class="header">
-        <img src="assets/images/header.png" width="100%">
-    </div>
-
+<body data-spy="scroll">
+    <span class="toggle">Menu</span>
     <div class="nav">
-        <div class="btn_intro"></div>
-        <div class="btn_class"></div>
-        <div class="btn_sign"></div>
-        <div class="btn_staff"></div>
-        <div class="btn_sponsor"></div>
+        <ul>
+            <li><a href="#header">LuCifer Holiday四校聯合寒訓</a></li>
+            <li><a href="#intro">基本簡介</a></li>
+            <li><a href="#class">課程介紹</a></li>
+            <li><a href="#sign">報 名</a></li>
+            <li><a href="#staff">工作團隊</a></li>
+            <li><a href="#sponsor">贊助</a></li>
+        </ul>
+
     </div>
-    
+
+    <a href="#header"></a>
+    <div class="header">
+        <img src="assets/images/header1.png" height="100%" width="100%">
+    </div>
+
+    <a name="intro"></a>
     <div class="intro">
-        intro
+        <img src="assets/images/icon.png" width="10%">
+        <h1>關於寒訓</h1> 啦啦啦
+        <h1>LuCifer小故事</h1> 啦啦啦
     </div>
 
+    <a name="class"></a>
     <div class="class">
-        class
+        <table>
+            <tr>
+                <th></th>
+                <th>Day1</th>
+                <th>Day2</th>
+                <th>Day3</th>
+                <th>Day4</th>
+                <th>Day5</th>
+            </tr>
+            <tr>
+                <td>9:00<br>~<br>9:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9:30<br>~<br>10:00</td>
+                <td>遊戲登入</td>
+                <td>補充元氣</td>
+                <td>自我升級</td>
+                <td>整裝備戰</td>
+                <td>戰友談心</td>
+            </tr>
+            <tr>
+                <td>10:00<br>~<br>12:00</td>
+                <td>「墮落前的天使」<br>git教學<br>‧Rice</td>
+                <td>「訓練時間」<br>Web教學<br>‧白羊</td>
+                <td>「升級後的苦果」<br>Web教學<br>‧Rice</td>
+                <td>出征！</td>
+                <td>御前爭功</td>
+            </tr>
+            <tr>
+                <td>12:00<br>~<br>13:30</td>
+                
+            </tr>
+            <tr>
+                <td>13:30<br>~<br>14:30</td>
+                <td>「新手教學」<br>Web教學<br>‧白羊</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>追封大典</td>
+            </tr>
+            <tr>
+                <td>14:30<br>~<br>16:30</td>
+                <td>好友登陸</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>終焉之時</td>     
+            </tr>
+        </table>
     </div>
 
+    <a name="sign"></a>
     <div class="sign">
-        sign
+        <h1>報名</h1>
+        <div class="Lft">
+            活動費用：新台幣500元整
+            <br> 開放報名：2016.1.3
+            <br> 報名截止：2016.1.20
+        </div>
+        <a href="http://goo.gl/forms/Z4RkRv4tfz"></a>
+        <button>我要報名寒訓!
+            <br>01/25~01/29</button>
     </div>
 
+    <a name="staff"></a>
     <div class="staff">
-        staff
+        <h1 style="text-align:center">工作團隊</h1>
+        <div id="staff">
+            <span style="color: #6fa8dc;">公關組 &nbsp;</span><span style="color: white;">葉俊廷、郭乃恩、梁博瑜、于珩</span>
+            <br />
+            <span style="color: #6fa8dc;">活動組 &nbsp;</span><span style="color: white;">林家園、陳柏達、郭宗育、蘇傳雅、許育誠、郭亞弦、陳泓諺、蔡宗達</span>
+            <br />
+            <span style="color: #6fa8dc;">美宣組 &nbsp;</span><span style="color: white;">邱柏翰、林大元、張喬茵、曾偉嘉</span>
+            <br />
+            <span style="color: #6fa8dc;">網管組</span><span style="color: #3d85c6;"> </span><span style="color: white;">&nbsp;賴炳宏、許晉捷</span>
+            <br />
+            <span style="color: #6fa8dc;">教學組 &nbsp;</span><span style="color: white;">王群皓、黃曉敏、李紹楓</span>
+            <br />
+            <span style="color: #6fa8dc;">總務組 </span><span style="color: white;">&nbsp;林玉蘭、郭大維、吳承儒、廖允寬、陳凱文</span>
+        </div>
     </div>
 
+    <a name="sponsor"></a>
     <div class="sponsor">
-        sponsor
+        <div class="Red-sponsor">
+            <h1>主辦單位</h1></div>
+        <img src="assets/images/DACSC.jpg" width="40%">
+        <img src="assets/images/HPSH.jpg" width="40%">
+        <img src="assets/images/ZLCSC.jpg" width="40%">
     </div>
 
     <div class="footer">
-        footer
+        <p>Made by Rice
+            <br>Open Source:
+            <a></a>
+        </p>
     </div>
-    <script type="text/javascript" src="assets/jquery-1.11.3.min.js"></script>
+
 </body>
+
 </html>
