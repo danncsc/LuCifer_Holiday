@@ -110,8 +110,19 @@ nav {
 
 .intro {
     background-color: white;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.cover {
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    height: 10%;
+    background-color: #E77C40;
+}
+.story {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .class {
     background-color: black;
@@ -168,7 +179,8 @@ nav {
 .sign,
 .sponsor,
 .class,
-.footer {
+.story,
+.footer{
     text-align: center;
 }
 .staff,
@@ -195,6 +207,9 @@ p {
 }
 #staff p {
     color: #009dff;
+}
+.story p{
+    
 }
 
 /*Table*/
