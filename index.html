@@ -7,8 +7,6 @@
     <title>LuCifer Holiday</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="assets/jquery.cycle.lite.js"></script>
-    <script src="assets/narrative.js"></script>
-    <script src="assets/skrollr.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(".toggle").click(function() {
@@ -16,6 +14,18 @@
                 $(".nav").slideToggle();
             });
             $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('.nav').addClass("menufixed");
+                } else {
+                    $('.nav').removeClass("menufixed");
+                }
+            });
+
         });
     </script>
 </head>
@@ -26,15 +36,15 @@
         <ul>
             <li><a href="#header">LuCifer Holiday四校聯合寒訓</a></li>
             <li><a href="#intro">基本簡介</a></li>
-            <li><a href="#class">課程介紹</a></li>
-            <li><a href="#sign">報 名</a></li>
+            <li><a href="#class">活動日程</a></li>
+            <li><a href="#sign">報名</a></li>
             <li><a href="#staff">工作團隊</a></li>
-            <li><a href="#sponsor">贊助</a></li>
+            <li><a href="#sponsor">參與單位</a></li>
         </ul>
 
     </div>
 
-    <a href="#header"></a>
+    <a name="header"></a>
     <div class="header">
         <img src="assets/images/header1.png" height="100%" width="100%">
     </div>
@@ -42,12 +52,26 @@
     <a name="intro"></a>
     <div class="intro">
         <img src="assets/images/icon.png" width="10%">
-        <h1>關於寒訓</h1> 啦啦啦
-        <h1>LuCifer小故事</h1> 啦啦啦
+        <h1>關於寒訓</h1>
+        <h3>寒冷的冬天，瘋狂的五天</h3>
+        <div class="story">
+            今年寒假!讓我們放下課業壓力參與活動吧!
+            <br>想學習更高的技術嗎?想認識電資友校的朋友嗎?想放鬆自己與志同道合的朋友瘋狂的度過寒假嗎?那就來寒訓吧!
+            <br>我們有豐富的課程、好玩刺激的遊戲、戶外參訪的行程以及更多你所不知道卻有趣的活動。
+            <br>五天行程充實，絕對值回票價，還在等甚麼?趕快報名吧!
+        </div>
+        <br>
+        <div class="cover">.</div>
+        <h1>LuCifer小故事</h1>
+        <h3>寧可驕傲的叛變，也不願卑微的折腰。</h3>
+        <div class="story">
+            LuCifer(路西法)一開始為天使長，但由於過度驕傲而忘記牠是一個天使而意圖與神同等。有一天，上帝帶聖子巡遊世界，讓眾天使向聖子下跪參拜；路西法因為不滿上帝讓其向聖子下跪，率領三分之一的天使叛變，並認為自己可以推翻上帝，不過牠失敗了，也因此被放逐並失去過去所擁有的所有榮耀，最後路西法在地獄建立了一個類似天堂的世界，並在那裏成為魔王─撒旦，跟隨他的墮落天使們則成為惡魔。
+        </div>
     </div>
 
     <a name="class"></a>
     <div class="class">
+        <h1>活動日程</h1>
         <table>
             <tr>
                 <th></th>
@@ -58,15 +82,15 @@
                 <th>Day5</th>
             </tr>
             <tr>
-                <td>9:00<br>~<br>9:30</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>9:00
+                    <br>~
+                    <br>9:30</td>
+                <td colspan="5">集合</td>
             </tr>
             <tr>
-                <td>9:30<br>~<br>10:00</td>
+                <td>9:30
+                    <br>~
+                    <br>10:00</td>
                 <td>遊戲登入</td>
                 <td>補充元氣</td>
                 <td>自我升級</td>
@@ -74,34 +98,51 @@
                 <td>戰友談心</td>
             </tr>
             <tr>
-                <td>10:00<br>~<br>12:00</td>
-                <td>「墮落前的天使」<br>git教學<br>‧Rice</td>
-                <td>「訓練時間」<br>Web教學<br>‧白羊</td>
-                <td>「升級後的苦果」<br>Web教學<br>‧Rice</td>
+                <td>10:00
+                    <br>~
+                    <br>12:00</td>
+                <td>「墮落前的天使」
+                    <br>git教學
+                    <br>-Rice-</td>
+                <td>「訓練時間」
+                    <br>Web教學
+                    <br>-白羊-</td>
+                <td>「升級後的苦果」
+                    <br>Web教學
+                    <br>-Rice-</td>
                 <td>出征！</td>
                 <td>御前爭功</td>
             </tr>
             <tr>
-                <td>12:00<br>~<br>13:30</td>
-                
+                <td>12:00
+                    <br>~
+                    <br>13:30</td>
+                <td colspan="5">LuCifer的信箱
+                    <br>午餐時間</td>
             </tr>
             <tr>
-                <td>13:30<br>~<br>14:30</td>
-                <td>「新手教學」<br>Web教學<br>‧白羊</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>13:30
+                    <br>~
+                    <br>14:30</td>
+                <td>「新手教學」
+                    <br>Web教學
+                    <br>-白羊-</td>
+                <td rowspan="2">「轉職時間」
+                    <br>Web教學
+                    <br>-Rice-</td>
+                <td rowspan="2">天使的叛變</td>
+                <td rowspan="2">討伐！</td>
                 <td>追封大典</td>
             </tr>
             <tr>
-                <td>14:30<br>~<br>16:30</td>
+                <td>14:30
+                    <br>~
+                    <br>16:30</td>
                 <td>好友登陸</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>終焉之時</td>     
+                <td>終焉之時</td>
             </tr>
         </table>
+        <h3>我們另外準備特殊行程，想知道的話就報名吧！</h3>
     </div>
 
     <a name="sign"></a>
@@ -121,6 +162,8 @@
     <div class="staff">
         <h1 style="text-align:center">工作團隊</h1>
         <div id="staff">
+            <span style="color: #6fa8dc;">執秘組 &nbsp;</span><span style="color: white;">謝碧娟、文珩、王群皓、李紹楓</span>
+            <br />
             <span style="color: #6fa8dc;">公關組 &nbsp;</span><span style="color: white;">葉俊廷、郭乃恩、梁博瑜、于珩</span>
             <br />
             <span style="color: #6fa8dc;">活動組 &nbsp;</span><span style="color: white;">林家園、陳柏達、郭宗育、蘇傳雅、許育誠、郭亞弦、陳泓諺、蔡宗達</span>
@@ -138,12 +181,17 @@
     <a name="sponsor"></a>
     <div class="sponsor">
         <div class="Red-sponsor">
-            <h1>主辦單位</h1></div>
-        <img src="assets/images/DACSC.jpg" width="40%">
-        <img src="assets/images/HPSH.jpg" width="40%">
-        <img src="assets/images/ZLCSC.jpg" width="40%">
+            <h1>主辦單位</h1>
+        </div>
+        <a href="https://www.facebook.com/dacsc17th/?fref=ts"><img src="assets/images/DACSC.jpg" width="35%"></a>
+        <p>大安高工電腦研究社</p>
+        <a href="https://www.facebook.com/HPSHCP/?fref=ts"><img src="assets/images/HPSH.jpg" width="35%"></a>
+        <p>和平高中程式研究社</p>
+        <a href="https://www.facebook.com/ZLCSC103/?fref=ts"><img src="assets/images/ZLCSC.jpg" width="35%"></a>
+        <p>中崙高中資訊研究社</p>
+        <a href="https://www.facebook.com/pages/%E5%B8%AB%E5%A4%A7%E9%99%84%E4%B8%AD-%E7%B6%B2%E8%B7%AF%E7%AE%A1%E7%90%86%E5%B0%8F%E7%B5%84/136630449700766"><img src="assets/images/CNMC.jpg" width="35%"></a>
+        <p>師大附中網路管理小組</p>
     </div>
-
     <div class="footer">
         <p>Made by Rice
             <br>Open Source:

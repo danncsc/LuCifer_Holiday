@@ -110,19 +110,31 @@ nav {
 
 .intro {
     background-color: white;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.cover {
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    height: 10%;
+    background-color: #E77C40;
+}
+.story {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .class {
     background-color: black;
-    padding-top: 150px;
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
 .sign {
     background-color: white;
     padding-top: 1px;
     padding-bottom: 1px;
 }
-.Lft {
+.Lft{
     margin-left: 40%;
 }
 .staff {
@@ -151,13 +163,13 @@ nav {
     margin-bottom: 1px;
     background-color: #c93f3f;
 }
-.sign button {
+.sign button{
     width: 20%;
     background-color: #3167c9;
     font-size: 18px;
     color: white;
 }
-.sign button:hover {
+.sign button:hover{
     background-color: #1446a0;
 }
 
@@ -167,7 +179,8 @@ nav {
 .sign,
 .sponsor,
 .class,
-.footer {
+.story,
+.footer{
     text-align: center;
 }
 .staff,
@@ -184,58 +197,34 @@ nav {
 p {
     color: white;
 }
+
+.sponsor p{
+    color: black;
+}
+
 .footer p {
     color: gray;
 }
 #staff p {
     color: #009dff;
 }
+.story p{
+    
+}
 
 /*Table*/
+table,th,td{
+    border: 1px solid;
+}
+table{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+td{
+    width: 5%;
+}
 
-.tg {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border-color: #aabcfe;
-}
-.tg td {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    padding: 10px 5px;
-    border-style: solid;
-    border-width: 1px;
-    overflow: hidden;
-    word-break: normal;
-    border-color: #aabcfe;
-    color: #669;
-    background-color: #e8edff;
-}
-.tg th {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 10px 5px;
-    border-style: solid;
-    border-width: 1px;
-    overflow: hidden;
-    word-break: normal;
-    border-color: #aabcfe;
-    color: #039;
-    background-color: #b9c9fe;
-}
-.tg .tg-mb3i {
-    background-color: #D2E4FC;
-    text-align: right;
-    vertical-align: top
-}
-.tg .tg-lqy6 {
-    text-align: right;
-    vertical-align: top
-}
-.tg .tg-yw4l {
-    vertical-align: top
-}
-.tg .tg-6k2t {
-    background-color: #D2E4FC;
-    vertical-align: top
+/*img*/
+.sponsor img{
+    vertical-align: text-top;
 }
