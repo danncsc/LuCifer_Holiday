@@ -110,8 +110,7 @@ nav {
 
 .intro {
     background-color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom:50px;
 }
 .cover {
     text-align: center;
@@ -126,31 +125,27 @@ nav {
 }
 .class {
     background-color: black;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    padding-bottom:50px;
 }
 .sign {
     background-color: white;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-bottom:50px;
 }
 .Lft{
     margin-left: 40%;
 }
 .staff {
     background-color: black;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-bottom:50px;
 }
-#staff {
+.Staff {
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 1%;
 }
 .sponsor {
     background-color: white;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-bottom:50px;
 }
 .footer {
     padding-top: 1px;
@@ -205,7 +200,7 @@ p {
 .footer p {
     color: gray;
 }
-#staff p {
+.Staff p {
     color: #009dff;
 }
 .story p{
