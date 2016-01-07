@@ -152,7 +152,7 @@ nav {
     background-color: black;
 }
 .Red-sponsor {
-    margin: 5%;
+    margin: auto;
     width: 10em;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -185,7 +185,7 @@ nav {
 .Red-sponsor h1 {
     color: white;
     margin-top: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 20px;
 }
 .class,
 .staff h1,
@@ -222,4 +222,5 @@ td{
 /*img*/
 .sponsor img{
     vertical-align: text-top;
+    width: 25%;
 }
