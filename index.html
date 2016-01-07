@@ -8,23 +8,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            $('.nav').addClass("menufixed");
             $(".toggle").click(function() {
                 $(this).toggleClass("active");
                 $(".nav").slideToggle();
             });
             $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 10) {
-                    $('.nav').addClass("menufixed");
-                } else {
-                    $('.nav').removeClass("menufixed");
-                }
-            });
-
         });
     </script>
 </head>
@@ -40,16 +29,15 @@
             <li><a href="#staff">工作團隊</a></li>
             <li><a href="#sponsor">參與單位</a></li>
         </ul>
-
     </div>
 
     <a name="header"></a>
-    <div class="header">
+    <div class="header" style="padding-top:50px">
         <img src="assets/images/header1.png" height="100%" width="100%">
     </div>
 
     <a name="intro"></a>
-    <div class="intro">
+    <div class="intro" style="padding-top:50px">
         <img src="assets/images/icon.png" width="10%">
         <h1>關於寒訓</h1>
         <h3>寒冷的冬天，瘋狂的五天</h3>
@@ -69,7 +57,7 @@
     </div>
 
     <a name="class"></a>
-    <div class="class">
+    <div class="class" style="padding-top:50px">
         <h1>活動日程</h1>
         <table>
             <tr>
@@ -145,7 +133,7 @@
     </div>
 
     <a name="sign"></a>
-    <div class="sign">
+    <div class="sign" style="padding-top:50px">
         <h1>報名</h1>
         <div class="Lft">
             活動費用：新台幣500元整
@@ -157,10 +145,10 @@
             <br>01/25~01/29</button>
     </div>
 
-    <a name="staff"></a>
-    <div class="staff">
+    <a name="staff"></a> 
+    <div class="staff" style="padding-top:50px">
         <h1 style="text-align:center">工作團隊</h1>
-        <div id="staff">
+        <div class="Staff">
             <span style="color: #6fa8dc;">執秘組 &nbsp;</span><span style="color: white;">謝碧娟、文珩、王群皓、李紹楓</span>
             <br />
             <span style="color: #6fa8dc;">公關組 &nbsp;</span><span style="color: white;">葉俊廷、郭乃恩、梁博瑜、于珩</span>
@@ -178,7 +166,7 @@
     </div>
 
     <a name="sponsor"></a>
-    <div class="sponsor">
+    <div class="sponsor" style="padding-top:50px">
         <div class="Red-sponsor">
             <h1>主辦單位</h1>
         </div>
@@ -193,8 +181,7 @@
     </div>
     <div class="footer">
         <p>Made by Rice
-            <br>Open Source:
-            <a></a>
+            <br><a href="https://github.com/danncsc/LuCifer_Holiday">Open Source</a>
         </p>
     </div>
 
