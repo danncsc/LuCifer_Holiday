@@ -159,10 +159,11 @@ nav {
     background-color: #c93f3f;
 }
 .sign button{
-    width: 20%;
+    width: auto;
     background-color: #3167c9;
     font-size: 18px;
     color: white;
+    border-bottom-style: none;
 }
 .sign button:hover{
     background-color: #1446a0;
