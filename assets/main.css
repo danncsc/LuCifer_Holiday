@@ -113,6 +113,10 @@ nav {
     padding-right: 10%;
 }
 
+.header{
+    padding-bottom: 50px;
+}
+
 .intro {
     padding-bottom:50px;
 }
@@ -133,6 +137,19 @@ nav {
 .sign {
     padding-bottom:50px;
 }
+.sign a{
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background:#897f35;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.sign a:hover{
+    background: #744c24;
+}
 .Lft{
     margin-left: 40%;
 }
@@ -149,7 +166,7 @@ nav {
 }
 .footer {
     padding-top: 1px;
-    background-color: black;
+    background-color: darkgrey;
 }
 .Red-sponsor {
     margin: auto;
@@ -157,16 +174,6 @@ nav {
     margin-top: 1px;
     margin-bottom: 1px;
     background-color: #c93f3f;
-}
-.sign button{
-    width: auto;
-    background-color: #3167c9;
-    font-size: 18px;
-    color: white;
-    border-bottom-style: none;
-}
-.sign button:hover{
-    background-color: #1446a0;
 }
 .pass{
     height: 5%;
@@ -203,7 +210,7 @@ p {
 }
 
 .footer p {
-    color: gray;
+    color: black;
 }
 .Staff p {
     color: #009dff;
