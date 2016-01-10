@@ -108,8 +108,12 @@ nav {
 
 /*nav end*/
 
+.intro,.cover,.class,.sign,.staff,.sponsor{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .intro {
-    background-color: white;
     padding-bottom:50px;
 }
 .cover {
@@ -124,18 +128,15 @@ nav {
     padding-right: 20%;
 }
 .class {
-    background-color: black;
     padding-bottom:50px;
 }
 .sign {
-    background-color: white;
     padding-bottom:50px;
 }
 .Lft{
     margin-left: 40%;
 }
 .staff {
-    background-color: black;
     padding-bottom:50px;
 }
 .Staff {
@@ -144,7 +145,6 @@ nav {
     margin-bottom: 1%;
 }
 .sponsor {
-    background-color: white;
     padding-bottom:50px;
 }
 .footer {
@@ -168,9 +168,14 @@ nav {
 .sign button:hover{
     background-color: #1446a0;
 }
+.pass{
+    height: 5%;
+    background-color: #bc9567;
+}
 
 /*text*/
 
+.header,
 .intro,
 .sign,
 .sponsor,
@@ -188,14 +193,13 @@ nav {
     margin-top: 1px;
     margin-bottom: 20px;
 }
+.intro,
 .class,
+.sign,
+.sponsor,
 .staff h1,
 p {
     color: white;
-}
-
-.sponsor p{
-    color: black;
 }
 
 .footer p {
@@ -203,9 +207,6 @@ p {
 }
 .Staff p {
     color: #009dff;
-}
-.story p{
-    
 }
 
 /*Table*/
@@ -224,4 +225,8 @@ td{
 .sponsor img{
     vertical-align: text-top;
     width: 25%;
+}
+.header img{
+    width: 75%;
+    vertical-align: middle;
 }
