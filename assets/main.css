@@ -112,7 +112,12 @@ nav {
     padding-left: 10%;
     padding-right: 10%;
 }
-
+@media (max-width:1000px){
+    .intro,.cover,.class,.sign,.staff,.sponsor{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
 .header{
     padding-bottom: 50px;
 }
@@ -151,15 +156,14 @@ nav {
     background: #744c24;
 }
 .Lft{
-    margin-left: 40%;
+    display: inline-block;
 }
 .staff {
     padding-bottom:50px;
 }
 .Staff {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .sponsor {
     padding-bottom:50px;
@@ -204,8 +208,7 @@ nav {
 .class,
 .sign,
 .sponsor,
-.staff h1,
-p {
+.staff p {
     color: white;
 }
 
@@ -214,6 +217,14 @@ p {
 }
 .Staff p {
     color: #009dff;
+}
+
+h1{
+    color: darkkhaki;
+}
+
+h3{
+    color: darksalmon;
 }
 
 /*Table*/
