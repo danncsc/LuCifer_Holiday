@@ -108,21 +108,21 @@ nav {
 
 /*nav end*/
 
-.intro,.cover,.class,.sign,.staff,.sponsor{
+#intro,.cover,#class,#sign,#staff,#sponsor{
     padding-left: 10%;
     padding-right: 10%;
 }
 @media (max-width:1000px){
-    .intro,.cover,.class,.sign,.staff,.sponsor{
+    #intro,.cover,#class,#sign,#staff,#sponsor{
         padding-left: 2%;
         padding-right: 2%;
     }
 }
-.header{
+#header{
     padding-bottom: 50px;
 }
 
-.intro {
+#intro {
     padding-bottom:50px;
 }
 .cover {
@@ -136,13 +136,13 @@ nav {
     padding-left: 20%;
     padding-right: 20%;
 }
-.class {
+#class {
     padding-bottom:50px;
 }
-.sign {
+#sign {
     padding-bottom:50px;
 }
-.sign a{
+#sign a{
     color: white;
     display: inline-block;
     padding: 5px 10px;
@@ -152,20 +152,20 @@ nav {
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
 }
-.sign a:hover{
+#sign a:hover{
     background: #744c24;
 }
 .Lft{
     display: inline-block;
 }
-.staff {
+#staff {
     padding-bottom:50px;
 }
 .Staff {
     margin-left: 20%;
     margin-right: 20%;
 }
-.sponsor {
+#sponsor {
     padding-bottom:50px;
 }
 .footer {
@@ -188,16 +188,16 @@ nav {
 
 /*text*/
 
-.header,
-.intro,
-.sign,
-.sponsor,
-.class,
+#header,
+#intro,
+#sign,
+#sponsor,
+#class,
 .story,
 .footer{
     text-align: center;
 }
-.staff,
+#staff,
 .Lft {
     text-align: left;
 }
@@ -206,11 +206,11 @@ nav {
     margin-top: 1px;
     margin-bottom: 20px;
 }
-.intro,
-.class,
-.sign,
-.sponsor,
-.staff p {
+#intro,
+#class,
+#sign,
+#sponsor,
+#staff p {
     color: white;
 }
 
@@ -230,29 +230,29 @@ h3{
 }
 
 /*Table*/
-.class table,th,td{
+#class table,th,td{
     border: 1px solid;
 }
-.class table{
+#class table{
     margin-left: 5%;
     margin-right: 5%;
 }
-.class td{
+#class td{
     width: 5%;
 }
-.sponsor table{
+#sponsor table{
     width: 80%;
 }
-.sponsor img{
+#sponsor img{
     width: 40%;
 }
 
 /*img*/
-.sponsor img{
+#sponsor img{
     vertical-align: text-top;
     width: 25%;
 }
-.header img{
+#header img{
     width: 75%;
     vertical-align: middle;
 }
